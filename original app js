@@ -1,0 +1,114 @@
+// export default function App() {
+//   return (
+//     <SafeAreaView>
+//       <table>
+//         <h1>Employee List</h1>
+//         <Thead>
+//           <Tr>
+//             <Th>User ID</Th>
+//             <Th>First Name</Th>
+//             <Th>Last Name</Th>
+//             <Th>Department</Th>
+//             <Th>Postive Notes</Th>
+//             <Th>Needs Improvement</Th>
+//             <Th>Other Notes</Th>
+//           </Tr>
+//         </Thead>
+//         <Tbody>
+//           {employees.map((Employee) => (
+//             <Tr key={Employee.id} data-id={Employee.id}>
+//               <Td>{Employee.id}</Td>
+//               <Td>
+//                 <EditableText
+//                   value={Employee.firstName}
+//                   handler={handleUpdate}
+//                   employeeKey="firstName"
+//                   id={Employee.id}
+//                 />
+//               </Td>
+//               {/* <Td>{Employee.firstName}</Td> */}
+//               <Td>
+//                 <EditableText
+//                   value={Employee.lastName}
+//                   handler={handleUpdate}
+//                   employeeKey="lastName"
+//                   id={Employee.id}
+//                 />
+//               </Td>
+//               {/* <Td>{Employee.lastName}</Td> */}
+//               <Td>
+//                 <EditableText
+//                   value={Employee.department}
+//                   handler={handleUpdate}
+//                   employeeKey="department"
+//                   id={Employee.id}
+//                 />
+//               </Td>
+//               {/* <Td>{Employee.department}</Td> */}
+//               {Employee.notes.map((note) => (
+//                 <>
+//                   <Td>
+//                     <EditableText
+//                       value={note.positives}
+//                       handler={handleUpdate}
+//                       employeeKey="positives"
+//                       id={Employee.id}
+//                     />
+//                   </Td>
+//                   {/* <Td>{note.positives}</Td> */}
+//                   <Td>
+//                     <EditableText
+//                       value={note.needImprovement}
+//                       handler={handleUpdate}
+//                       employeeKey="needImprovement"
+//                       id={Employee.id}
+//                     />
+//                   </Td>
+//                   {/* <Td>{note.needImprovement}</Td> */}
+//                   <Td>
+//                     <EditableText
+//                       value={note.note}
+//                       handler={handleUpdate}
+//                       employeeKey="note"
+//                       id={Employee.id}
+//                     />
+//                   </Td>
+//                   {/* <Td>{note.note}</Td> */}
+//                 </>
+//               ))}
+//               <Td>
+//                 <Button colorScheme="blue">
+//                   View
+//                   {/* <Router>
+//                     <Link
+//                       to="/view"
+//                       className="nav-link active"
+//                       href="./pages/View"
+//                     >
+//                       View
+//                     </Link>
+//                   </Router> */}
+//                 </Button>
+//               </Td>
+//               <Td>
+//                 <Button
+//                   leftIcon={<DeleteIcon />}
+//                   colorScheme="red"
+//                   variant="solid"
+//                   size="md"
+//                   onClick={() => handleDelete(Employee.id)}
+//                   // padding="20px"
+//                   // onClick={handleDelete}
+//                   // data-id={id}
+//                 >
+//                   Delete 🔥
+//                 </Button>
+//               </Td>
+//             </Tr>
+//           ))}
+//         </Tbody>
+
+//       </table>
+//     </SafeAreaView>
+//   );
+// }
